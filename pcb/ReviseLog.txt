@@ -1,0 +1,38 @@
+Version 1.1
+1) Strentch the line between MCU and ENC28J60
+
+2) Change the package of 100uF from surface-mounted to DIP.
+
+3) Modify the package of 4.7uF and 22uF from 0805 package to 1206.
+
+4) Stretch the line between the RS232 and capacitors.
+
+5) Pouring Clearance set to be 12mil instead of 8mil.
+
+ultracold
+2011-12-29
+
+------------------------------------------------------------------------------------
+
+Version 1.0
+In this version, we made several changes to the original pcb file.
+
+1) Add new component ENC28J60 and Ethernet Connector and pheriheperal circuits.
+
+2) Delete the RS-232 DB/9 Connector cause now it cannot be used.
+
+3) Modify the supply voltage for NJM2267 to 5.0V.
+
+4) Add the couple capacitor of 4.7uF to the input port of NJM2267.
+
+5) Modify the package of 100uF.
+
+6) Change the I2C interface (SCL, SDA) from PB4, PB3 to PC0, PC1.
+
+7) Rename the net connected with PB4 to ASS as the SPI chip selector.
+
+8) Replace PB2's connection to CPLD with PB3's. While PB2 is connected to the ENC's 
+interrupt signal.
+
+ultracold
+2011-12-26

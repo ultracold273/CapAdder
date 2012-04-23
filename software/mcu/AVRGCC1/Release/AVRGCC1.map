@@ -1,0 +1,512 @@
+Archive member included because of file (symbol)
+
+c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+                              AVRGCC1.o (__mulsi3)
+c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+                              c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+                              AVRGCC1.o (__do_copy_data)
+c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                              generic.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+info                0x9               generic.o
+bufferLength        0x1               generic.o
+length              0x1               generic.o
+STR                 0x2               generic.o
+networkBuffer       0x400             generic.o
+buffer              0x100             generic.o
+timeAccumulate      0x1               generic.o
+STRINGDISPOFFSET    0x4               generic.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+LOAD AVRGCC1.o
+LOAD BufferDataProc.o
+LOAD ExtFlash.o
+LOAD generic.o
+LOAD httpd.o
+LOAD I2C.o
+LOAD nwkStack.o
+LOAD SAADevice.o
+LOAD SPI_enc28j60.o
+LOAD SramSet.o
+LOAD USART.o
+LOAD c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a
+LOAD c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5\libc.a
+LOAD c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2c8c
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_11
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_10
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092      0x84e AVRGCC1.o
+                0x00000092                setInterruptTimer
+                0x000000a4                stopInterruptTimer
+                0x000000ac                showScrollString
+                0x000003e4                __vector_2
+                0x00000496                showStaticString
+                0x0000078a                __vector_3
+                0x0000080c                main
+ .text          0x000008e0        0x0 BufferDataProc.o
+ .text          0x000008e0      0x24c ExtFlash.o
+                0x000008e0                PORTC_init
+                0x000008ec                PORTA_init
+                0x000008ee                ExtFlashCommandSet
+                0x00000906                ExtFlashAddressSet
+                0x0000091e                ExtFlashDataSet
+                0x00000934                ExtFlashDataRead
+                0x0000094e                ExtFlashReset
+                0x00000956                ExtFlashStatusRead
+                0x00000964                ExtFlashCheckID
+                0x0000099c                ExtFlashPageDataRead
+                0x00000a18                ExtFlashPageProgram
+                0x00000ab6                ExtFlashBlockErase
+                0x00000b04                ExtFlashWholeErase
+ .text          0x00000b2c        0x0 generic.o
+ .text          0x00000b2c      0x28a httpd.o
+                0x00000b2c                HttpRequestDeal
+                0x00000b82                bufferDeal
+                0x00000c54                server
+ .text          0x00000db6      0x146 I2C.o
+                0x00000db6                I2C_init
+                0x00000dc6                ERROR
+                0x00000e4c                I2C_Send_M_Start
+                0x00000e74                I2C_Send_M_ReStart
+                0x00000e8e                I2C_Send_M_Addr
+                0x00000ebe                I2C_Send_M_Data
+                0x00000eda                I2C_Send_M_Stop
+                0x00000ee0                I2C_Send_M_Read
+ .text          0x00000efc      0x440 nwkStack.o
+                0x00000efc                makeEthernetHeader
+                0x00000f28                isArpAndTargetMyIp
+                0x00000f60                sendArpAnswers
+                0x00000fce                isIpPacketAndTargetMyIp
+                0x00001006                getIpPacketLength
+                0x0000102e                sendIpPacket
+                0x000010d4                isUdpPacket
+                0x000010f2                getUdpPort
+                0x0000111a                getUdpDataPointer
+                0x00001124                makeUdpPacket
+                0x0000117c                isTcpPacket
+                0x0000119a                isTcpAndSyn
+                0x000011ba                isTcpAndFinAck
+                0x000011da                isTcpAndRequireData
+                0x000011f6                getTcpPort
+                0x00001216                getTcpDataPointer
+                0x0000122e                makeTcpPacket
+                0x0000124c                makeTcpHeader
+ .text          0x0000133c      0x3ea SAADevice.o
+                0x0000133c                SAA_W
+                0x00001378                SAA_R
+                0x000013bc                SAA7113_init
+                0x000014f4                SAA7121_init
+ .text          0x00001726      0x68c SPI_enc28j60.o
+                0x00001726                SPI_MasterInit
+                0x00001732                enc28j60_enable
+                0x00001736                enc28j60_disable
+                0x0000173a                enc28j60_resetDisable
+                0x00001740                enc28j60_resetEnable
+                0x00001746                SPI_MasterTransmit
+                0x00001750                enc28j60_ReadOperation
+                0x00001792                enc28j60_WriteOperation
+                0x000017cc                enc28j60_ReadBufferMemory
+                0x00001820                enc28j60_WriteBufferMemory
+                0x00001852                enc28j60_setBank
+                0x0000189a                enc28j60_SystemReset
+                0x000018aa                enc28j60_ReadControlRegister
+                0x000018cc                enc28j60_WriteControlRegister
+                0x000018f4                enc28j60_ReadPhyRegister
+                0x00001946                enc28j60_WritePhyRegister
+                0x00001986                enc28j60_init
+                0x00001ab0                enc28j60_getEthernetRevisionID
+                0x00001ab8                enc28j60_receivePacket
+                0x00001b86                enc28j60_hardwareChecksum
+                0x00001c10                enc28j60_sendPacket
+ .text          0x00001db2      0xe3e SramSet.o
+                0x00001db2                SramAddrSet
+                0x00001df4                SramInit
+                0x00001e96                SramClear
+                0x00001f0a                SramScrollInit
+                0x00001fb2                SramScrollClear
+                0x00002020                SramHZ16Set
+                0x00002182                SramHZ24Set
+                0x000022f0                SramHZ16SetWithoutBorder
+                0x00002438                SramHZ24SetWithoutBorder
+                0x00002588                sramASC16Set
+                0x000026b6                sramASC16SetWithoutBorder
+                0x000027cc                sramASC24Set
+                0x000028f8                sramASC24SetWithoutBorder
+                0x00002a08                SramSpace16Set
+                0x00002a66                SramSpace24Set
+                0x00002ac4                SramSpace16SetWithoutBorder
+                0x00002b5a                SramSpace24SetWithoutBorder
+ .text          0x00002bf0       0x5a USART.o
+                0x00002bf0                USART_init
+                0x00002c00                USART_Transmit
+                0x00002c0e                USART_Receive
+                0x00002c16                USART_StringPut
+ .text          0x00002c4a        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00002c4a        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .text          0x00002c4a        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .text          0x00002c4a        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                0x00002c4a                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00002c4a       0x3e c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+                0x00002c4a                __mulsi3
+ .text.libgcc   0x00002c88        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002c88        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002c88        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                0x00002c88                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002c88        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+                0x00002c88                _exit
+                0x00002c88                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002c88        0x4 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002c8c                _etext = .
+
+.data           0x00800060      0x230 load address 0x00002c8c
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060       0x51 AVRGCC1.o
+ .data          0x008000b1        0x0 BufferDataProc.o
+ .data          0x008000b1        0x0 ExtFlash.o
+ .data          0x008000b1       0x6c generic.o
+                0x008000b1                colorTable
+                0x008000dd                characBuffer
+ .data          0x0080011d      0x108 httpd.o
+ .data          0x00800225       0x69 I2C.o
+ .data          0x0080028e        0x2 nwkStack.o
+ .data          0x00800290        0x0 SAADevice.o
+ .data          0x00800290        0x0 SPI_enc28j60.o
+ .data          0x00800290        0x0 SramSet.o
+ .data          0x00800290        0x0 USART.o
+ .data          0x00800290        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00800290        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .data          0x00800290        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800290        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800290                . = ALIGN (0x2)
+                0x00800290                _edata = .
+                0x00800290                PROVIDE (__data_end, .)
+
+.bss            0x00800290      0x518
+                0x00800290                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800290        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800290        0x0 AVRGCC1.o
+ .bss           0x00800290        0x0 BufferDataProc.o
+ .bss           0x00800290        0x0 ExtFlash.o
+ .bss           0x00800290        0x1 generic.o
+                0x00800290                ASC16
+ .bss           0x00800291        0x0 httpd.o
+ .bss           0x00800291        0x0 I2C.o
+ .bss           0x00800291        0x2 nwkStack.o
+ .bss           0x00800293        0x0 SAADevice.o
+ .bss           0x00800293        0x3 SPI_enc28j60.o
+ .bss           0x00800296        0x0 SramSet.o
+ .bss           0x00800296        0x0 USART.o
+ .bss           0x00800296        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00800296        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .bss           0x00800296        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800296        0x0 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800296      0x512 generic.o
+                0x00800296                info
+                0x0080029f                bufferLength
+                0x008002a0                length
+                0x008002a1                STR
+                0x008002a3                networkBuffer
+                0x008006a3                buffer
+                0x008007a3                timeAccumulate
+                0x008007a4                STRINGDISPOFFSET
+                0x008007a8                PROVIDE (__bss_end, .)
+                0x00002c8c                __data_load_start = LOADADDR (.data)
+                0x00002ebc                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008007a8        0x0
+                0x008007a8                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008007a8                PROVIDE (__noinit_end, .)
+                0x008007a8                _end = .
+                0x008007a8                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x6cc
+ *(.stab)
+ .stab          0x00000000      0x6cc c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+
+.stabstr        0x00000000       0x85
+ *(.stabstr)
+ .stabstr       0x00000000       0x85 c:/program files/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm32.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(AVRGCC1.elf elf32-avr)
+LOAD linker stubs

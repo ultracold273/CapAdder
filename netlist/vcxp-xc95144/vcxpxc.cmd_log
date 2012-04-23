@@ -1,0 +1,1 @@
+xst -ise "E:/Projects/VCXP-C/vcxp-xc95144/vcxp-xc95144.ise" -intstyle ise -ifn "E:/Projects/VCXP-C/vcxp-xc95144/vcxpxc.xst" -ofn "E:/Projects/VCXP-C/vcxp-xc95144/vcxpxc.syr"
